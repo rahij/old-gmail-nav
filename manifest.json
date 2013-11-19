@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+
+  "name": "Old Menu Bar for GMail",
+  "description": "Get your GMail menu bar back!",
+  "version": "1.4",
+  "content_scripts": [
+    {
+      "matches": ["https://mail.google.com/*", "https://www.google.com/*", "https://www.google.co.in/*", "https://www.google.com.sg/*", "https://www.google.co.uk/*"],
+      "js": ["jquery-latest.js", "myscript.js"],
+      "css":["styles.css"],
+      "run_at": "document_end"
+    }
+  ],
+  "permissions": [
+    "tabs","<all_urls>"
+  ]
+}
